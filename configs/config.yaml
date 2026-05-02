@@ -1,0 +1,13 @@
+weights:
+  yolo: D:\python_file\YOLO_SP_Porject\weights\yolov8n-fire.pt
+  superpoint: D:\python_file\YOLO_SP_Porject\weights\superpoint_v6_from_tf.pth
+model:
+  input_size: 640
+data:
+  train_img_dir: D:\\python_file\\YOLO_SP_Porject\\datasets\\fire\\images\\train
+  val_img_dir:   D:\\python_file\\YOLO_SP_Porject\\datasets\\fire\\images\\val
+train:
+  distill_epochs: 80
+  batch_size: 8
+  distill_lr: 0.001
+  temperature: 3.0
